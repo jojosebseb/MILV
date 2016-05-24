@@ -180,7 +180,7 @@ $font-black: #000000;
    display: inline-block;
    position: relative;
    bottom: -280px;
-   transition: all .5s ease;
+   transition: all .4s ease;
    .first-section-subheader{
       @extend .unisans-title;
       font-size: 58px;
@@ -218,7 +218,7 @@ $font-black: #000000;
    top: -280px;
    position: relative;
    z-index: -9;
-   transition: all .5s ease;
+   transition: all .4s ease;
 }
 .button-container{
    text-align: center;
@@ -260,18 +260,18 @@ $font-black: #000000;
    top: -820px;
    z-index: -1;
    opacity: 0.1;
-   transition: all .5s ease;
+   transition: all .4s ease;
 }
 .main-section-right-1{
    @extend .main-section-right;
    height: 700px;
-   background-color: black;
+   background-color: transparent;
    padding: 0px 50px;
    position: relative;
    z-index: -1;
    top: 820px;
    opacity: 0.1;
-   transition: all .5s ease;
+   transition: all .4s ease;
 }
 .main-header-1{
    @extend .unisans-title;
@@ -317,13 +317,23 @@ $font-black: #000000;
 .main-section-left-2{
    @extend .main-section-left;
    height: 560px;
-   background-color: black;
+   background-color: transparent;
    padding: 0px 50px 0 0;
    width: 50%;
+   position: relative;
+   top: -1200px;
+   z-index: -2;
+   opacity: 0.1;
+   transition: all .4s ease;
 }
 .main-section-right-2{
    @extend .main-section-right;
    height: 560px;
+   top: 1100px;
+   position: relative;
+   z-index: -2;
+   opacity: 0.1;
+   transition: all .4s ease;
 }
 .main-header-2{
    @extend .unisans-title;
@@ -349,12 +359,22 @@ $font-black: #000000;
    @extend .main-section-left;
    height: 560px;
    width: 50%;
+   position: relative;
+   top: 1480px;
+   opacity: 0.1;
+   z-index: -3;
+   transition: all .4s ease;
 }
 .main-section-right-3{
    @extend .main-section-right;
-   background-color: black;
+   background-color: transparent;
    height: 560px;
    padding: 0px 0px 0 50px;
+   position: relative;
+   top: -1480px;
+   opacity: 0.1;
+   z-index: -3;
+   transition: all .4s ease;
 }
 .main-header-3{
    @extend .unisans-title;
@@ -476,7 +496,7 @@ $font-black: #000000;
 .main-section-left-4{
    @extend .main-section-left;
    height: 550px;
-   background-color: black;
+   background-color: transparent;
    padding: 0px 50px 0 0;
    width: 45%;
 }
@@ -484,7 +504,7 @@ $font-black: #000000;
    @extend .main-section-right;
    height: 550px;
    width: 55%;
-   background-color: black;
+   background-color: transparent;
 }
 .main-header-4{
    @extend .unisans-title;
@@ -710,7 +730,9 @@ $font-black: #000000;
 //jquery-classes
 .jquery-show{
    opacity: 1;
+   z-index: 1;
 }
 .jquery-hide{
-   opacity: 0.1
+   opacity: 0.1;
+   z-index: -1;
 }
