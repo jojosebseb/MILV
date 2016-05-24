@@ -5,6 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>MILV</title>
+   <link rel="stylesheet" href="styles/jquery.fancybox.css" type="text/css" media="screen" />
    <link rel="stylesheet" type="text/css" href="styles/slick.css" />
    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1050px)" href="styles/main_desktop.min.css" />
    <link rel="stylesheet" type="text/css" media="screen and (max-width: 1049px)" href="styles/main_mobile.min.css" />
@@ -17,11 +18,11 @@
 			 <div class="nav-logo"></div>
 			 <div class="nav-menu">
 				<ul>
-				   <li>Home</li>
-				   <li>about us</li>
-				   <li>Event & Promotion</li>
-				   <li>Partners</li>
-				   <li>Contact</li>
+				   <a href="#"><li>Home</li></a>
+				   <a href="#about"><li>about us</li></a>
+				   <a href="#events"><li>Event & Promotion</li></a>
+				   <a href="#partners"><li>Partners</li></a>
+				   <a href="#contact"><li>Contact</li></a>
 				</ul>
 			 </div>
 		  </div>
@@ -64,7 +65,7 @@
 			 </div>
 		  </div>
 
-		  <div class="main-section-1">
+		  <div class="main-section-1" id="about">
 			 <div class="main-section-left-1">
 			 </div>
 			 <div class="main-section-right-1">
@@ -133,7 +134,7 @@
 			 </div>
 		  </div>
 
-		  <div class="second-slider-container">
+		  <div class="second-slider-container" id="events">
 			 <div class="second-slider-title">
 				Event & Promotion.
 			 </div>
@@ -188,7 +189,7 @@
 			 <div class="arrow-next"></div>
 		  </div>
 
-		  <div class="main-section-4">
+		  <div class="main-section-4" id="partners">
 			 <div class="main-subheader-l">
 				PARTNERS.
 			 </div>
@@ -228,7 +229,7 @@
 		  </div>
 	  </div>
       <div class="clearfix"></div>
-      <div class="footer">
+      <div class="footer" id="contact">
 		<div class="parent-container">
 			 <div class="footer-left">
 				<div class="footer-left-location footer-left-module">
@@ -284,6 +285,7 @@
 
    <script type="text/javascript" src="script/jquery.1.12.0.min.js"></script>
    <script type="text/javascript" src="script/slick.min.js"></script>
+   <script type="text/javascript" src="script/jquery.fancybox.pack.js"></script>
    <script type="text/javascript" src="script/jquery.js"></script>
 </body>
 </html>

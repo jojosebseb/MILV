@@ -39,13 +39,13 @@ $font-black: #000000;
 .unisans-title{
    color: $font-white;
    font-family: unisans;
-   font-size: 50px;
+   font-size: 20px;
    text-transform: uppercase;
 }
 .paragraph-monreg{
    color: $font-white;
    font-family: monreg;
-   font-size: 25px;
+   font-size: 14px;
 }
 .paragraph-monlight{
    color: $font-white;
@@ -72,15 +72,15 @@ $font-black: #000000;
 }
 //init vars
 .parent-container{
-   width: 1120px;
+   width: 320px;
    margin: auto;
 }
 //header
 .nav-header{
-   padding: 10px 60px;
+   padding: 10px 20px;
    color: $font-white;
    font-size: 17px;
-   height: 120px;
+   height: 80px;
    display: block;
    width: 100vw;
    position: fixed;
@@ -89,6 +89,7 @@ $font-black: #000000;
 }
 .nav-menu{
    float: right;
+   display: none;
    ul{
       list-style: none;
       font-family: franklin;
@@ -110,15 +111,15 @@ $font-black: #000000;
    }
 }
 .nav-logo{
-   width: 105px;
-   height: 105px;
+   width: 60px;
+   height: 60px;
    float: left;
    background-image: url(../img/props/milv-logo.png);
    background-size: contain;
    background-repeat: no-repeat;
 }
 .header-fix{
-   height: 120px;
+   height: 80px;
 }
 //header
 //top-slider
@@ -179,14 +180,13 @@ $font-black: #000000;
    margin-bottom: 50px;
 }
 .first-section-left{
-   width: 700px;
    display: inline-block;
-   position: relative;
+   position: static;
    bottom: -280px;
    transition: all .4s ease;
    .first-section-subheader{
       @extend .unisans-title;
-      font-size: 58px;
+      font-size: 24px;
       margin-bottom: 20px;
    }
    .first-section-subheader::after{
@@ -197,18 +197,18 @@ $font-black: #000000;
    }
    .first-section-paragraph{
       @extend .paragraph-monreg;
-      width: 600px;
    }
 }
 .first-section-grid-container{
-
+   width: 100%;
+   margin: auto;
 }
 .first-section-grid{
-   width: 295px;
-   height: 295px;
+   width: 140px;
+   height: 140px;
    background-color: grey;
    display: inline-block;
-   margin: 10px 20px 10px 0px;
+   margin: 5px;
    background-image: url('../img/props/dummy-img.jpg');
    background-position: center center;
    background-size: 110%;
@@ -223,21 +223,23 @@ $font-black: #000000;
    background-size: 100%;
 }
 .first-section-right{
-   width: 400px;
+   width: 180px;
    display: inline-block;
-   height: 828px;
+   height: 370px;
    background-image: url(../img/props/static-1.png);
    background-repeat: no-repeat;
    background-size: contain;
    float: right;
-   top: -280px;
-   position: relative;
+   right: 0;
+   top: 80px;
+   position: fixed;
    z-index: -9;
    transition: all .4s ease;
+   opacity: 0.3;
 }
 .button-container{
    text-align: center;
-   margin: 50px 0px;
+   margin: 20px 0px;
 }
 .first-section-button{
    @extend .milv-button;
@@ -248,44 +250,32 @@ $font-black: #000000;
 //main-section
 .main-section{
    width: 100%;
-   height: 550px;
    margin: 80px 0px;
 }
 .main-section-left{
-   width: 50%;
    float: left;
    background-color: grey;
-   height: 550px;
+   width: 100%;
 }
 .main-section-right{
-   width: 50%;
    float: right;
    background-color: grey;
-   height: 550px;
+   width: 100%;
 }
 //main-section-1
 .main-section-1{
    @extend .main-section;
-   height: 700px;
 }
 .main-section-left-1{
    @extend .main-section-left;
-   height: 700px;
-   position: relative;
-   top: -820px;
-   z-index: -1;
-   opacity: 0.1;
+   z-index: 1;
    transition: all .4s ease;
+   height: 300px;
 }
 .main-section-right-1{
    @extend .main-section-right;
-   height: 700px;
    background-color: transparent;
-   padding: 0px 50px;
    position: relative;
-   z-index: -1;
-   top: 820px;
-   opacity: 0.1;
    transition: all .4s ease;
 }
 .main-header-1{
@@ -327,27 +317,17 @@ $font-black: #000000;
 //main-section-2
 .main-section-2{
    @extend .main-section;
-   height: 560px;
 }
 .main-section-left-2{
    @extend .main-section-left;
-   height: 560px;
    background-color: transparent;
-   padding: 0px 50px 0 0;
-   width: 50%;
+
    position: relative;
-   top: -1200px;
-   z-index: -2;
-   opacity: 0.1;
    transition: all .4s ease;
 }
 .main-section-right-2{
    @extend .main-section-right;
-   height: 560px;
-   top: 1100px;
    position: relative;
-   z-index: -2;
-   opacity: 0.1;
    transition: all .4s ease;
 }
 .main-header-2{
@@ -368,27 +348,17 @@ $font-black: #000000;
 //main-section-3
 .main-section-3{
    @extend .main-section;
-   height: 560px;
 }
 .main-section-left-3{
    @extend .main-section-left;
-   height: 560px;
-   width: 50%;
    position: relative;
-   top: 1480px;
-   opacity: 0.1;
-   z-index: -3;
    transition: all .4s ease;
 }
 .main-section-right-3{
    @extend .main-section-right;
    background-color: transparent;
-   height: 560px;
    padding: 0px 0px 0 50px;
    position: relative;
-   top: -1480px;
-   opacity: 0.1;
-   z-index: -3;
    transition: all .4s ease;
 }
 .main-header-3{
@@ -506,18 +476,15 @@ $font-black: #000000;
 //main-section-4
 .main-section-4{
    @extend .main-section;
-   height: 550px;
 }
 .main-section-left-4{
    @extend .main-section-left;
-   height: 550px;
    background-color: transparent;
    padding: 0px 50px 0 0;
    width: 45%;
 }
 .main-section-right-4{
    @extend .main-section-right;
-   height: 550px;
    width: 55%;
    background-color: transparent;
 }
@@ -567,7 +534,6 @@ $font-black: #000000;
 }
 .main-section-props-4{
    background-image: url(../img/props/static-2.png);
-   width: 420px;
    height: 420px;
    background-size: contain;
    background-repeat: no-repeat;
@@ -580,7 +546,7 @@ $font-black: #000000;
          list-style: none;
          margin-top: 50px;
          position: absolute;
-         right: -50px;
+         right: 10px;
          top: 220px;
          li{
             height: 13px;
@@ -629,14 +595,11 @@ $font-black: #000000;
 //footer
 .footer{
    background-color: #14f7fa;
-   height: 500px;
+   padding-top: 10px;
+   padding-bottom: 20px;
 }
 .footer-left{
    font-family: myriadproreg;
-   width: 50%;
-   float: left;
-   height: 500px;
-   padding: 100px 140px;
 }
 .footer-left-location{
    background-image: url("../img/props/location.png");
@@ -666,10 +629,7 @@ $font-black: #000000;
    border-radius: 50%;
 }
 .footer-right{
-   width: 50%;
-   float: right;
-   height: 500px;
-   padding: 50px 0px;
+   padding: 0px 0px;
 }
 .footer-right-header{
    @extend .unisans-title;
@@ -680,13 +640,14 @@ $font-black: #000000;
    background-color: transparent;
    border: none;
    border-bottom: 1px solid #333;
-   width: 400px;
+   width: 250px;
    height: 50px;
    padding-left: 10px;
    color: black;
    margin-top: 20px;
    font-family: monlight;
    outline: none;
+   margin: 10px auto;
 }
 .message{
    height: 80px;
@@ -697,6 +658,7 @@ $font-black: #000000;
    background-color: black;
    color: white;
    border: 1px solid black;
+   margin: auto;
 }
 .module-fb{
    background-image: url(../img/props/icon-facebook.png);
