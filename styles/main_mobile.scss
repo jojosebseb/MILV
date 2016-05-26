@@ -132,7 +132,7 @@ $font-black: #000000;
 //header
 //top-slider
 .top-slider{
-   height: 520px;
+   height: 420px;
    background-color: #14f7fa;
    .slick-dots{
       text-align: center;
@@ -171,8 +171,8 @@ $font-black: #000000;
    font-size: 48px;
    margin: auto;
    text-align: center;
-   height: 520px;
-   padding: 180px 0px;
+   height: 420px;
+   padding: 130px 0px;
    outline: none;
    cursor: pointer;
 }
@@ -212,8 +212,8 @@ $font-black: #000000;
    text-align: center;
 }
 .first-section-grid{
-   width: 148px;
-   height: 148px;
+   width: 130px;
+   height: 130px;
    background-color: grey;
    display: inline-block;
    margin: 5px;
@@ -227,8 +227,8 @@ $font-black: #000000;
    -webkit-transition: background-size .3s ease;
 }
 .grid-img{
-   width: 148px;
-   height: 148px;
+   width: 130px;
+   height: 130px;
 }
 .first-section-grid:hover{
    background-size: 100%;
@@ -560,9 +560,9 @@ $font-black: #000000;
 }
 .main-section-right-4{
    position: relative;
-   width: 235px;
+   width: 205px;
    bottom: 75px;
-   left: 132px;
+   left: 110px;
       .slick-dots{
          text-align: center;
          list-style: none;
