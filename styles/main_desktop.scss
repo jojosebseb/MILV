@@ -209,15 +209,15 @@ $font-black: #000000;
    background-color: grey;
    display: inline-block;
    margin: 10px 20px 10px 0px;
-   background-image: url('../img/props/dummy-img.jpg');
-   background-position: center center;
-   background-size: 110%;
-   background-repeat: no-repeat;
    transition: background-size .3s ease;
    -moz-transition: background-size .3s ease;
    -ms-transition: background-size .3s ease;
    -o-transition: background-size .3s ease;
    -webkit-transition: background-size .3s ease;
+}
+.grid-img{
+   width: 295px;
+   height: 295px;
 }
 .first-section-grid:hover{
    background-size: 100%;

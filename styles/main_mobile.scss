@@ -6,6 +6,7 @@
 }
 a, a:visited{
    color: white;
+   text-decoration: none;
 }
 body{
    background-color: #000000;
@@ -64,6 +65,7 @@ $font-black: #000000;
    border: 1px solid white;
    cursor: pointer;
    transition: all .3s ease;
+   margin: auto !important;
 }
 .milv-button:hover{
    border: 1px solid black;
@@ -90,19 +92,25 @@ $font-black: #000000;
 .nav-menu{
    float: right;
    display: none;
+   background-color: #111;
+   width: 100vw;
+   left: 0px;
+   position: fixed;
+   top: 80px;
    ul{
       list-style: none;
       font-family: franklin;
       cursor: default;
+      text-decoration: none;
    }
    li{
-      display: inline-block;
-      padding: 40px 0px;
+      display: block;
+      padding: 20px 0px;
       margin: 0px 10px;
       cursor: pointer;
-      border-bottom: 1px solid black;
       transition: all .3s cubic-bezier(0.24, 0.77, 0.25, 1);
       opacity: 0.8;
+      text-decoration: none;
    }
    li:hover{
       transform: translateY(-5px);
@@ -182,7 +190,6 @@ $font-black: #000000;
 .first-section-left{
    display: inline-block;
    position: static;
-   bottom: -280px;
    transition: all .4s ease;
    .first-section-subheader{
       @extend .unisans-title;
@@ -202,14 +209,14 @@ $font-black: #000000;
 .first-section-grid-container{
    width: 100%;
    margin: auto;
+   text-align: center;
 }
 .first-section-grid{
-   width: 140px;
-   height: 140px;
+   width: 148px;
+   height: 148px;
    background-color: grey;
    display: inline-block;
    margin: 5px;
-   background-image: url('../img/props/dummy-img.jpg');
    background-position: center center;
    background-size: 110%;
    background-repeat: no-repeat;
@@ -218,6 +225,10 @@ $font-black: #000000;
    -ms-transition: background-size .3s ease;
    -o-transition: background-size .3s ease;
    -webkit-transition: background-size .3s ease;
+}
+.grid-img{
+   width: 148px;
+   height: 148px;
 }
 .first-section-grid:hover{
    background-size: 100%;
@@ -229,7 +240,6 @@ $font-black: #000000;
    background-image: url(../img/props/static-1.png);
    background-repeat: no-repeat;
    background-size: contain;
-   float: right;
    right: 0;
    top: 80px;
    position: fixed;
@@ -239,7 +249,7 @@ $font-black: #000000;
 }
 .button-container{
    text-align: center;
-   margin: 20px 0px;
+   margin-bottom: 20px;
 }
 .first-section-button{
    @extend .milv-button;
@@ -251,14 +261,13 @@ $font-black: #000000;
 .main-section{
    width: 100%;
    margin: 80px 0px;
+   height: 100%;
 }
 .main-section-left{
-   float: left;
    background-color: grey;
    width: 100%;
 }
 .main-section-right{
-   float: right;
    background-color: grey;
    width: 100%;
 }
@@ -271,6 +280,7 @@ $font-black: #000000;
    z-index: 1;
    transition: all .4s ease;
    height: 300px;
+   margin-bottom: 20px;
 }
 .main-section-right-1{
    @extend .main-section-right;
@@ -310,13 +320,15 @@ $font-black: #000000;
 }
 .main-button-1{
    @extend .milv-button;
-   margin: none;
+   margin: auto;
 }
 //main-section-1
 
 //main-section-2
 .main-section-2{
    @extend .main-section;
+   position: relative;
+   padding-top: 320px;
 }
 .main-section-left-2{
    @extend .main-section-left;
@@ -327,8 +339,10 @@ $font-black: #000000;
 }
 .main-section-right-2{
    @extend .main-section-right;
-   position: relative;
+   position: absolute;
    transition: all .4s ease;
+   height: 300px;
+   top: 0px;
 }
 .main-header-2{
    @extend .unisans-title;
@@ -353,11 +367,11 @@ $font-black: #000000;
    @extend .main-section-left;
    position: relative;
    transition: all .4s ease;
+   height: 300px;
 }
 .main-section-right-3{
    @extend .main-section-right;
    background-color: transparent;
-   padding: 0px 0px 0 50px;
    position: relative;
    transition: all .4s ease;
 }
@@ -412,7 +426,7 @@ $font-black: #000000;
 }
 .second-slider-title{
    @extend .unisans-title;
-   text-align: right;
+   text-align: center;
 }
 .second-slider-content{
    text-align: center;
@@ -450,7 +464,7 @@ $font-black: #000000;
    height: 25px;
    width: 25px;
    position: absolute;
-   top: 250px;
+   top: 260px;
    cursor: pointer;
    transition: all .3s ease;
 }
@@ -458,14 +472,14 @@ $font-black: #000000;
    @extend .arrows;
    border-top: 1px solid white;
    border-left: 1px solid white;
-   left: -20px;
+   left: -10px;
    transform: rotate(-45deg);
 }
 .arrow-next{
    @extend .arrows;
    border-top: 1px solid white;
    border-right: 1px solid white;
-   right: -20px;
+   right: -10px;
    transform: rotate(45deg);
 }
 .arrows:hover{
@@ -480,12 +494,10 @@ $font-black: #000000;
 .main-section-left-4{
    @extend .main-section-left;
    background-color: transparent;
-   padding: 0px 50px 0 0;
-   width: 45%;
+   position: relative;
 }
 .main-section-right-4{
    @extend .main-section-right;
-   width: 55%;
    background-color: transparent;
 }
 .main-header-4{
@@ -513,6 +525,7 @@ $font-black: #000000;
    color: white;
    font-size: 38px;
    position: relative;
+   text-align: right;
 }
 .main-subheader-m::after{
    content: "";
@@ -531,22 +544,31 @@ $font-black: #000000;
    font-size: 18px;
    text-align: right;
    margin-top: 20px;
+   width: 110px;
 }
 .main-section-props-4{
    background-image: url(../img/props/static-2.png);
-   height: 420px;
+   height: 195px;
    background-size: contain;
+   z-index: -2;
    background-repeat: no-repeat;
-
+   position: absolute;
+   top: 50;
+   right: -10px;
+   width: 200px;
+   display: none;
 }
 .main-section-right-4{
    position: relative;
+   width: 235px;
+   bottom: 75px;
+   left: 132px;
       .slick-dots{
          text-align: center;
          list-style: none;
          margin-top: 50px;
          position: absolute;
-         right: 10px;
+         left: -20px;
          top: 220px;
          li{
             height: 13px;
@@ -596,33 +618,41 @@ $font-black: #000000;
 .footer{
    background-color: #14f7fa;
    padding-top: 10px;
-   padding-bottom: 20px;
+   padding-bottom: 10px;
 }
 .footer-left{
    font-family: myriadproreg;
+   text-align: center;
 }
 .footer-left-location{
    background-image: url("../img/props/location.png");
+   width: 210px;
+   margin: 20px auto !important;
 }
 .footer-left-contact{
    background-image: url("../img/props/phone.png");
+   width: 210px;
+   margin: 20px auto !important;
 }
 .footer-left-mail{
    background-image: url("../img/props/message.png");
+   width: 210px;
+   margin: 20px auto !important;
 }
 .footer-left-module{
    margin: 40px 0px;
-   padding-left: 25px;
+   padding-left: 15px;
    font-size: 14px;
    background-repeat: no-repeat;
    background-position: 0 center;
 }
 .footer-left-socmed{
    padding: 0px;
+   text-align: center;
 }
 .socmed-module{
    display: inline-block;
-   margin-right: 15px;
+   margin: 0px 7px;
    height: 35px;
    width: 35px;
    background-color: black;
@@ -634,6 +664,7 @@ $font-black: #000000;
 .footer-right-header{
    @extend .unisans-title;
    color: black;
+   text-align: center;
 }
 .footer-inputs{
    display: block;
@@ -647,7 +678,7 @@ $font-black: #000000;
    margin-top: 20px;
    font-family: monlight;
    outline: none;
-   margin: 10px auto;
+   margin: 10px auto 20px;
 }
 .message{
    height: 80px;
@@ -703,7 +734,21 @@ $font-black: #000000;
    clear: both;
 }
 //copyright
-
+//mobile-handle
+.mobile-handle-div{
+   float: right;
+   height: 60px;
+   width: 60px;
+   right: 40px;
+   top: 10px;
+}
+.mobile-handle-line{
+   width: 40px;
+   margin: 10px auto;
+   border: 2px solid white;
+   border-radius: 500px;
+}
+//mobile-handle
 //jquery-classes
 .jquery-show{
    opacity: 1;
@@ -722,4 +767,54 @@ $font-black: #000000;
    left: 0;
    background-size: 200px;
    background-position: center center;
+}
+@media screen and (min-width: 700px) {
+   .parent-container{
+      width: 80vw;
+   }
+   .footer-left, .footer-right{
+      text-align: left;
+      width: 300px;
+      display: inline-block;
+   }
+   .footer-left-socmed{
+      text-align: left;
+      li{
+         margin: none;
+         margin: 0px 10px 0px 0px;
+      }
+   }
+   .first-section-grid{
+      width: 200px;
+      height: 200px;
+   }
+   .grid-img{
+      width: 200px;
+      height: 200px;
+   }
+   .triplet-slider-content{
+      width: 130px;
+      height: 107px;
+   }
+   .main-section-right-4{
+      width: 100%;
+      .slick-dots{
+         top: 100px;
+         left: 180px;
+         li{
+            height: 13px;
+            width: 13px;
+            background-color: black;
+            margin: 10px;
+            border-radius: 50%;
+            border: 1px solid white;
+            opacity: 1;
+            cursor: pointer;
+            display: inline-block;
+            transition: all .3s ease;
+         }
+
+      }
+   }
+
 }

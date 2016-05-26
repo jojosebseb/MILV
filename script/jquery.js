@@ -47,7 +47,17 @@ $(document).ready(function(){
                vertical: false,
                verticalSwiping: false,
             }
-         }]
+         },
+         {
+   			breakpoint: 600,
+   			settings: {
+   				slidesToShow: 1,
+   				slidesToScroll: 1,
+               vertical: true,
+               verticalSwiping: true,
+   			}
+   		},
+      ]
   });
 });
 //slick
@@ -171,10 +181,22 @@ $(document).ready(function(){
 });
 //smooth-scroll
 //popup-box
-var popupboxGrid = $('.first-section-grid');
+var popupboxGrid = $('.fancybox');
 
-$(document).ready(function() {
+
    popupboxGrid.fancybox();
-});
 
 //popup-box
+
+//mobile-handle
+var mobileHandle = $('.mobile-handle-div');
+var mobileMenu = $('.nav-menu');
+var menuOptions = $('.menu-options');
+
+mobileHandle.on('click', function(){
+   mobileMenu.slideToggle();
+});
+menuOptions.on('click', function(){
+   mobileMenu.slideToggle();
+})
+//mobile-handle
