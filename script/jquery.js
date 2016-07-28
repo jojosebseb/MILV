@@ -8,7 +8,7 @@ $(document).ready(function(){
       dots: true,
       vertical: true,
       verticalSwiping: true,
-      
+
   });
 });
 $(document).ready(function(){
@@ -109,8 +109,8 @@ if ($(window).width() > 900){
 
    win.on('scroll', function(){
      var topscroll = win.scrollTop()/2;
-     mSectionLeft2.css('transform', 'translateY(' + topscroll + 'px)');
-     mSectionRight2.css('transform', 'translateY(-' + topscroll + 'px)');
+     mSectionLeft2.css('transform', 'translateY(-' + topscroll + 'px)');
+     mSectionRight2.css('transform', 'translateY(' + topscroll + 'px)');
      if (win.scrollTop() >1900) {
          mSectionLeft1.removeClass('jquery-show');
          mSectionRight1.removeClass('jquery-show');
@@ -131,7 +131,7 @@ if ($(window).width() > 900){
      var topscroll = win.scrollTop()/2;
      mSectionLeft3.css('transform', 'translateY(' + topscroll + 'px)');
      mSectionRight3.css('transform', 'translateY(-' + topscroll + 'px)');
-     if (win.scrollTop() >2000) {
+     if (win.scrollTop() >2500) {
          mSectionLeft2.removeClass('jquery-show');
          mSectionRight2.removeClass('jquery-show');
          mSectionLeft3.addClass('jquery-show');
